@@ -22,88 +22,6 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-.header{
-    position: fixed;
-    width: 100%;
-    max-width: inherit;
-    background-color: rgba(33, 33, 33, 0.8);
-    padding: 17px 20px;
-    .header__wrapper{
-        display: flex;
-        justify-content: space-between;
-        .header__menu-left{
-            display: flex;
-            .menu-left__burger{
-                margin-right: 23px;
-                cursor: pointer;
-                .burger{
-                    stroke: white;
-                    transition: 0.5s;
-                    &:hover{
-                        stroke: #C80000;
-                    }
-                }
-            }
-            .menu-left__map{
-                margin-right: 35px;
-                cursor: pointer;
-                .map{
-                    stroke: white;
-                    transition: 0.5s;
-                    &:hover{
-                        stroke: #C80000;
-                    }
-                }
-            }
-            .menu-left__number{
-                a{
-                    color: #fff;
-                    font-size: 20px;
-                    line-height: 24px;
-                    transition: 0.5s;
-                    &:hover{
-                        color: #C80000;
-                    }
-                }
-            }
-        }
-        .header__logo{
-            .logo{
-                font-size: 30px;
-                color: #fff;
-                .logo-white{
-                    background-color: #fff;
-                    color: #000;
-                }
-            }
-        }
-        .header__menu-right{
-            display: flex;
-            .menu-right__cart{
-                cursor: pointer;
-            }
-            .menu-right__mail{
-                stroke: white;
-                margin-left: 24px;
-                cursor: pointer;
-                transition: 0.5s;
-                &:hover{
-                    stroke: #C80000;
-                }
-            }
-            .menu-right__search{
-                stroke: white;
-                margin-left: 24px;
-                cursor: pointer;
-                transition: 0.5s;
-                &:hover{
-                    stroke: #C80000;
-                }
-            }
-        }
-    }
-    
-}
 .site-descr{
     background: url(https://drive.google.com/uc?export=view&id=1klcq7mI55oY2m61EOQ_iSlGKIkrQnmGz) center no-repeat;
     padding-top: 148px;
@@ -174,4 +92,99 @@ body {
             color: #C80000;
         }
     }
+}
+.products__wrapper{
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    .collection-knives{
+        position: relative;
+        cursor: pointer;
+        max-width: 590px;
+        transition: 0.5s;
+        z-index: 10;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &:hover .collection-knives__title{
+            color: #C80000;
+        }
+        &:hover .arrow{
+            stroke: #C80000;
+        }
+        .collection-knives__img{
+            display: inline-block;
+            img{
+                width: 100%;
+                border-radius: 16px;
+            }
+        }
+        .collection-knives__title{
+            position: absolute;
+            bottom: 30px;
+            left: 26px;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 28px;
+        }
+        .arrow{
+            position: absolute;
+            bottom: 36px;
+            right: 28px;
+        }
+    }
+}
+.knive-item{
+    max-width: 286px;
+    .knive-item__add-cart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 11px;
+        background: #272727;
+        border-radius: 14px;
+        position: relative;
+        min-height: 412px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        &:hover .plus{
+            background-color: #C80000;
+            border-radius: 50%;
+        }
+        img{
+            background: #272727;
+            border-radius: 16px;
+        }
+        .plus{
+            position: absolute;
+            top: 24px;
+            right: 27px;
+        }
+    }
+    .knive-item__title{
+        display: block;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;      
+    }
+    .knive-item__price{
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;   
+        margin-right: 28px;
+        opacity: 0.5;   
+    }
+    .knive-item__new{
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #C80000;
+    }
+}
+.new-product{
+    align-self: center;
 }

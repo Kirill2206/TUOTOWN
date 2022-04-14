@@ -1,0 +1,82 @@
+.header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    max-width: inherit;
+    background-color: rgba(33, 33, 33, 0.8);
+    padding: 17px 20px;
+    .header__wrapper{
+        display: flex;
+        justify-content: space-between;
+        .header__menu-left{
+            display: flex;
+            .menu-left__burger{
+                margin-right: 23px;
+                cursor: pointer;
+                .burger{
+                    stroke: white;
+                    transition: 0.5s;
+                    &:hover{
+                        stroke: #C80000;
+                    }
+                }
+            }
+            .menu-left__map{
+                margin-right: 35px;
+                cursor: pointer;
+                .map{
+                    stroke: white;
+                    transition: 0.5s;
+                    &:hover{
+                        stroke: #C80000;
+                    }
+                }
+            }
+            .menu-left__number{
+                a{
+                    color: #fff;
+                    font-size: 20px;
+                    line-height: 24px;
+                    transition: 0.5s;
+                    &:hover{
+                        color: #C80000;
+                    }
+                }
+            }
+        }
+        .header__logo{
+            .logo{
+                font-size: 30px;
+                color: #fff;
+                .logo-white{
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+        .header__menu-right{
+            display: flex;
+            .menu-right__cart{
+                cursor: pointer;
+            }
+            .menu-right__mail{
+                stroke: white;
+                margin-left: 24px;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    stroke: #C80000;
+                }
+            }
+            .menu-right__search{
+                stroke: white;
+                margin-left: 24px;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    stroke: #C80000;
+                }
+            }
+        }
+    }
+}

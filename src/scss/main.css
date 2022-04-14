@@ -26,115 +26,6 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  position: fixed;
-  width: 100%;
-  max-width: inherit;
-  background-color: rgba(33, 33, 33, 0.8);
-  padding: 17px 20px;
-}
-
-.header .header__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header .header__wrapper .header__menu-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header .header__wrapper .header__menu-left .menu-left__burger {
-  margin-right: 23px;
-  cursor: pointer;
-}
-
-.header .header__wrapper .header__menu-left .menu-left__burger .burger {
-  stroke: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.header .header__wrapper .header__menu-left .menu-left__burger .burger:hover {
-  stroke: #C80000;
-}
-
-.header .header__wrapper .header__menu-left .menu-left__map {
-  margin-right: 35px;
-  cursor: pointer;
-}
-
-.header .header__wrapper .header__menu-left .menu-left__map .map {
-  stroke: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.header .header__wrapper .header__menu-left .menu-left__map .map:hover {
-  stroke: #C80000;
-}
-
-.header .header__wrapper .header__menu-left .menu-left__number a {
-  color: #fff;
-  font-size: 20px;
-  line-height: 24px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.header .header__wrapper .header__menu-left .menu-left__number a:hover {
-  color: #C80000;
-}
-
-.header .header__wrapper .header__logo .logo {
-  font-size: 30px;
-  color: #fff;
-}
-
-.header .header__wrapper .header__logo .logo .logo-white {
-  background-color: #fff;
-  color: #000;
-}
-
-.header .header__wrapper .header__menu-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header .header__wrapper .header__menu-right .menu-right__cart {
-  cursor: pointer;
-}
-
-.header .header__wrapper .header__menu-right .menu-right__mail {
-  stroke: white;
-  margin-left: 24px;
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.header .header__wrapper .header__menu-right .menu-right__mail:hover {
-  stroke: #C80000;
-}
-
-.header .header__wrapper .header__menu-right .menu-right__search {
-  stroke: white;
-  margin-left: 24px;
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.header .header__wrapper .header__menu-right .menu-right__search:hover {
-  stroke: #C80000;
-}
-
 .site-descr {
   background: url(https://drive.google.com/uc?export=view&id=1klcq7mI55oY2m61EOQ_iSlGKIkrQnmGz) center no-repeat;
   padding-top: 148px;
@@ -226,5 +117,131 @@ body {
 
 .site-nav .link-item:hover {
   color: #C80000;
+}
+
+.products__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products__wrapper .collection-knives {
+  position: relative;
+  cursor: pointer;
+  max-width: 590px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.products__wrapper .collection-knives:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.products__wrapper .collection-knives:hover .collection-knives__title {
+  color: #C80000;
+}
+
+.products__wrapper .collection-knives:hover .arrow {
+  stroke: #C80000;
+}
+
+.products__wrapper .collection-knives .collection-knives__img {
+  display: inline-block;
+}
+
+.products__wrapper .collection-knives .collection-knives__img img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.products__wrapper .collection-knives .collection-knives__title {
+  position: absolute;
+  bottom: 30px;
+  left: 26px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.products__wrapper .collection-knives .arrow {
+  position: absolute;
+  bottom: 36px;
+  right: 28px;
+}
+
+.knive-item {
+  max-width: 286px;
+}
+
+.knive-item .knive-item__add-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 11px;
+  background: #272727;
+  border-radius: 14px;
+  position: relative;
+  min-height: 412px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.knive-item .knive-item__add-cart:hover .plus {
+  background-color: #C80000;
+  border-radius: 50%;
+}
+
+.knive-item .knive-item__add-cart img {
+  background: #272727;
+  border-radius: 16px;
+}
+
+.knive-item .knive-item__add-cart .plus {
+  position: absolute;
+  top: 24px;
+  right: 27px;
+}
+
+.knive-item .knive-item__title {
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.knive-item .knive-item__price {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  margin-right: 28px;
+  opacity: 0.5;
+}
+
+.knive-item .knive-item__new {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #C80000;
+}
+
+.new-product {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=main.css.map */

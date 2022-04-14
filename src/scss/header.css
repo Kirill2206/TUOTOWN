@@ -1,0 +1,110 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  max-width: inherit;
+  background-color: rgba(33, 33, 33, 0.8);
+  padding: 17px 20px;
+}
+
+.header .header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header__wrapper .header__menu-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header__wrapper .header__menu-left .menu-left__burger {
+  margin-right: 23px;
+  cursor: pointer;
+}
+
+.header .header__wrapper .header__menu-left .menu-left__burger .burger {
+  stroke: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .header__wrapper .header__menu-left .menu-left__burger .burger:hover {
+  stroke: #C80000;
+}
+
+.header .header__wrapper .header__menu-left .menu-left__map {
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.header .header__wrapper .header__menu-left .menu-left__map .map {
+  stroke: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .header__wrapper .header__menu-left .menu-left__map .map:hover {
+  stroke: #C80000;
+}
+
+.header .header__wrapper .header__menu-left .menu-left__number a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .header__wrapper .header__menu-left .menu-left__number a:hover {
+  color: #C80000;
+}
+
+.header .header__wrapper .header__logo .logo {
+  font-size: 30px;
+  color: #fff;
+}
+
+.header .header__wrapper .header__logo .logo .logo-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.header .header__wrapper .header__menu-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header__wrapper .header__menu-right .menu-right__cart {
+  cursor: pointer;
+}
+
+.header .header__wrapper .header__menu-right .menu-right__mail {
+  stroke: white;
+  margin-left: 24px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .header__wrapper .header__menu-right .menu-right__mail:hover {
+  stroke: #C80000;
+}
+
+.header .header__wrapper .header__menu-right .menu-right__search {
+  stroke: white;
+  margin-left: 24px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .header__wrapper .header__menu-right .menu-right__search:hover {
+  stroke: #C80000;
+}
+/*# sourceMappingURL=header.css.map */
