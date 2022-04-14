@@ -1,0 +1,177 @@
+*, li, a {
+	padding: 0;
+	margin: 0;
+	border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    color: #fff;
+    background-color: #373737;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.center{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    max-width: inherit;
+    background-color: rgba(33, 33, 33, 0.8);
+    padding: 17px 20px;
+    .header__wrapper{
+        display: flex;
+        justify-content: space-between;
+        .header__menu-left{
+            display: flex;
+            .menu-left__burger{
+                margin-right: 23px;
+                cursor: pointer;
+                .burger{
+                    stroke: white;
+                    transition: 0.5s;
+                    &:hover{
+                        stroke: #C80000;
+                    }
+                }
+            }
+            .menu-left__map{
+                margin-right: 35px;
+                cursor: pointer;
+                .map{
+                    stroke: white;
+                    transition: 0.5s;
+                    &:hover{
+                        stroke: #C80000;
+                    }
+                }
+            }
+            .menu-left__number{
+                a{
+                    color: #fff;
+                    font-size: 20px;
+                    line-height: 24px;
+                    transition: 0.5s;
+                    &:hover{
+                        color: #C80000;
+                    }
+                }
+            }
+        }
+        .header__logo{
+            .logo{
+                font-size: 30px;
+                color: #fff;
+                .logo-white{
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+        .header__menu-right{
+            display: flex;
+            .menu-right__cart{
+                cursor: pointer;
+            }
+            .menu-right__mail{
+                stroke: white;
+                margin-left: 24px;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    stroke: #C80000;
+                }
+            }
+            .menu-right__search{
+                stroke: white;
+                margin-left: 24px;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    stroke: #C80000;
+                }
+            }
+        }
+    }
+    
+}
+.site-descr{
+    background: url(https://drive.google.com/uc?export=view&id=1klcq7mI55oY2m61EOQ_iSlGKIkrQnmGz) center no-repeat;
+    padding-top: 148px;
+    padding-bottom: 161px;
+    .site-descr__title{
+        max-width: 600px;
+        margin-left: 189px;
+        margin-bottom: 24px;
+        font-family: 'Jura';
+        font-weight: 400;
+        font-size: 41px;
+        line-height: 48px;
+        color: #fff;
+    }
+    .site-descr__sub-title{
+        max-width: 450px;
+        margin-left: 189px;
+        margin-bottom: 55px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        color: #fff;
+    }
+    .site-sescr__btn{
+        display: inline-block;
+        margin-left: 189px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 23px;
+        border: 2px solid #C80000;
+        box-sizing: border-box;
+        border-radius: 27px;
+        padding: 16px 34px;
+        color: #fff;
+        transition: 0.5s;
+        &:hover{
+            background-color: #C80000;
+        }
+
+    }
+}
+.site-nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 88px;
+    .site-nav__link{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .link-item{
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+        color: #FFFFFF;
+        opacity: 0.4;
+        margin-top: 31px;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover{
+            color: #C80000;
+        }
+    }
+}
