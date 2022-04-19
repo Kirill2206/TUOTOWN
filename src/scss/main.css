@@ -117,12 +117,15 @@ body {
 
 .site-nav .link-item:hover {
   color: #C80000;
+  opacity: 1;
 }
 
 .products__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 18px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -173,6 +176,29 @@ body {
   position: absolute;
   bottom: 36px;
   right: 28px;
+}
+
+.products__wrapper .email-form-news {
+  margin-top: 49px;
+  text-align: center;
+}
+
+.products__wrapper .email-form-news .new-product {
+  font-family: 'Jura';
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin-bottom: 17px;
+}
+
+.products__wrapper .email-form-news .email-form input {
+  outline: none;
+  max-width: 276px;
+  background: #272727;
+  border-radius: 6px;
+  padding: 21px 164px 20px 26px;
+  color: #fff;
 }
 
 .knive-item {
@@ -237,11 +263,5 @@ body {
   font-size: 14px;
   line-height: 28px;
   color: #C80000;
-}
-
-.new-product {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 /*# sourceMappingURL=main.css.map */

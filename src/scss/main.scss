@@ -90,11 +90,13 @@ body {
         cursor: pointer;
         &:hover{
             color: #C80000;
+            opacity: 1;
         }
     }
 }
 .products__wrapper{
     display: flex;
+    justify-content: space-around;
     gap: 18px;
     flex-wrap: wrap;
     .collection-knives{
@@ -132,6 +134,28 @@ body {
             position: absolute;
             bottom: 36px;
             right: 28px;
+        }
+    }
+    .email-form-news{
+        margin-top: 49px;
+        text-align: center;
+        .new-product{
+            font-family: 'Jura';
+            font-weight: 500;
+            font-size: 27px;
+            line-height: 42px;
+            color: #FFFFFF;
+            margin-bottom: 17px;
+        }
+        .email-form{
+            input{
+                outline: none;
+                max-width: 276px;
+                background: #272727;
+                border-radius: 6px;
+                padding: 21px 164px 20px 26px;
+                color: #fff;
+            }
         }
     }
 }
@@ -184,7 +208,4 @@ body {
         line-height: 28px;
         color: #C80000;
     }
-}
-.new-product{
-    align-self: center;
 }
