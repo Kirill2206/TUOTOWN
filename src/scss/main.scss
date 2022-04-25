@@ -95,49 +95,52 @@ body {
     }
 }
 .products__wrapper{
-    display: flex;
-    justify-content: space-around;
-    gap: 18px;
-    flex-wrap: wrap;
-    .collection-knives{
-        position: relative;
-        cursor: pointer;
-        max-width: 590px;
-        transition: 0.5s;
-        z-index: 10;
-        &:hover{
-            transform: scale(1.1);
-        }
-        &:hover .collection-knives__title{
-            color: #C80000;
-        }
-        &:hover .arrow{
-            stroke: #C80000;
-        }
-        .collection-knives__img{
-            display: inline-block;
-            img{
-                width: 100%;
-                border-radius: 16px;
+    .products__content{
+        display: flex;
+        justify-content: space-around;
+        gap: 18px;
+        flex-wrap: wrap;
+        .collection-knives{
+            position: relative;
+            cursor: pointer;
+            max-width: 590px;
+            transition: 0.5s;
+            z-index: 10;
+            &:hover{
+                transform: scale(1.1);
             }
-        }
-        .collection-knives__title{
-            position: absolute;
-            bottom: 30px;
-            left: 26px;
-            font-family: 'Montserrat';
-            font-weight: 600;
-            font-size: 17px;
-            line-height: 28px;
-        }
-        .arrow{
-            position: absolute;
-            bottom: 36px;
-            right: 28px;
+            &:hover .collection-knives__title{
+                color: #C80000;
+            }
+            &:hover .arrow{
+                stroke: #C80000;
+            }
+            .collection-knives__img{
+                display: inline-block;
+                img{
+                    width: 100%;
+                    border-radius: 16px;
+                }
+            }
+            .collection-knives__title{
+                position: absolute;
+                bottom: 30px;
+                left: 26px;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 28px;
+            }
+            .arrow{
+                position: absolute;
+                bottom: 36px;
+                right: 28px;
+            }
         }
     }
     .email-form-news{
         margin-top: 49px;
+        margin-bottom: 49px;
         text-align: center;
         .new-product{
             font-family: 'Jura';
@@ -149,12 +152,47 @@ body {
         }
         .email-form{
             input{
+                width: 100%;
                 outline: none;
                 max-width: 276px;
                 background: #272727;
                 border-radius: 6px;
-                padding: 21px 164px 20px 26px;
+                padding: 21px 30px 20px 26px;
                 color: #fff;
+            }
+        }
+    }
+    .products__about-new{
+        display: flex;
+        justify-content: space-around;
+        gap: 18px;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+    }
+    .delimiter{
+        max-width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 60px;
+    }
+    .knife-category{
+        display: flex;
+        gap: 50px;
+        width: 100%;
+        justify-content: center;
+        .knife-category__item{
+            cursor: pointer;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 42px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            opacity: 0.5;
+            border-bottom: 2px solid #C80000;
+            transition: 0.5s;
+            &:hover{
+                opacity: 1;
+                border-bottom: 2px solid #C80000
             }
         }
     }

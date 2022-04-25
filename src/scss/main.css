@@ -120,7 +120,7 @@ body {
   opacity: 1;
 }
 
-.products__wrapper {
+.products__wrapper .products__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +131,7 @@ body {
       flex-wrap: wrap;
 }
 
-.products__wrapper .collection-knives {
+.products__wrapper .products__content .collection-knives {
   position: relative;
   cursor: pointer;
   max-width: 590px;
@@ -140,29 +140,29 @@ body {
   z-index: 10;
 }
 
-.products__wrapper .collection-knives:hover {
+.products__wrapper .products__content .collection-knives:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.products__wrapper .collection-knives:hover .collection-knives__title {
+.products__wrapper .products__content .collection-knives:hover .collection-knives__title {
   color: #C80000;
 }
 
-.products__wrapper .collection-knives:hover .arrow {
+.products__wrapper .products__content .collection-knives:hover .arrow {
   stroke: #C80000;
 }
 
-.products__wrapper .collection-knives .collection-knives__img {
+.products__wrapper .products__content .collection-knives .collection-knives__img {
   display: inline-block;
 }
 
-.products__wrapper .collection-knives .collection-knives__img img {
+.products__wrapper .products__content .collection-knives .collection-knives__img img {
   width: 100%;
   border-radius: 16px;
 }
 
-.products__wrapper .collection-knives .collection-knives__title {
+.products__wrapper .products__content .collection-knives .collection-knives__title {
   position: absolute;
   bottom: 30px;
   left: 26px;
@@ -172,7 +172,7 @@ body {
   line-height: 28px;
 }
 
-.products__wrapper .collection-knives .arrow {
+.products__wrapper .products__content .collection-knives .arrow {
   position: absolute;
   bottom: 36px;
   right: 28px;
@@ -180,6 +180,7 @@ body {
 
 .products__wrapper .email-form-news {
   margin-top: 49px;
+  margin-bottom: 49px;
   text-align: center;
 }
 
@@ -193,12 +194,61 @@ body {
 }
 
 .products__wrapper .email-form-news .email-form input {
+  width: 100%;
   outline: none;
   max-width: 276px;
   background: #272727;
   border-radius: 6px;
-  padding: 21px 164px 20px 26px;
+  padding: 21px 30px 20px 26px;
   color: #fff;
+}
+
+.products__wrapper .products__about-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 18px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+
+.products__wrapper .delimiter {
+  max-width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 60px;
+}
+
+.products__wrapper .knife-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products__wrapper .knife-category .knife-category__item {
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.5;
+  border-bottom: 2px solid #C80000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.products__wrapper .knife-category .knife-category__item:hover {
+  opacity: 1;
+  border-bottom: 2px solid #C80000;
 }
 
 .knive-item {

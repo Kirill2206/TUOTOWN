@@ -41,6 +41,12 @@
   line-height: 22px;
   text-transform: uppercase;
   color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.burger-menu .menu-wrapp .burger__links .link a:hover {
+  color: #C80000;
 }
 
 .burger-menu .menu-wrapp .burger__company {
@@ -60,6 +66,12 @@
   text-transform: uppercase;
   color: #FFFFFF;
   opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.burger-menu .menu-wrapp .burger__company .company__link a:hover {
+  color: #C80000;
 }
 
 .hide {
