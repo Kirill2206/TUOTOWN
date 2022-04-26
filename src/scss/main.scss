@@ -11,7 +11,6 @@ body {
     background-color: #373737;
     font-family: 'Montserrat', sans-serif;
 }
-
 .wrapper{
     max-width: 1440px;
     width: 100%;
@@ -21,6 +20,11 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+}
+.delimiter{
+    max-width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 60px;
 }
 .site-descr{
     background: url(https://drive.google.com/uc?export=view&id=1klcq7mI55oY2m61EOQ_iSlGKIkrQnmGz) center no-repeat;
@@ -169,11 +173,6 @@ body {
         flex-wrap: wrap;
         padding-bottom: 60px;
     }
-    .delimiter{
-        max-width: 100%;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        margin-bottom: 60px;
-    }
     .knife-category{
         display: flex;
         gap: 50px;
@@ -245,5 +244,114 @@ body {
         font-size: 14px;
         line-height: 28px;
         color: #C80000;
+    }
+}
+.descr-knife{
+    .descr-knife__content{
+        .descr-knife-top{
+            display: flex;
+            align-items: center;
+            margin-bottom: 39px;
+            .descr-top-img{
+                max-width: 300px;
+                margin-right: 81px;
+            }
+        }
+        .descr-text-top{
+            max-width: 672px;
+            .descr-title{
+                font-family: 'Jura';
+                font-weight: 500;
+                font-size: 35px;
+                line-height: 42px;
+                color: #FFFFFF;
+                margin-bottom: 51px;
+            }
+            .decsr{
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: #FFFFFF;
+            }
+        }
+        .descr-knife-bottom{
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+            .descr-text-bottom{
+                max-width: 811px;
+                margin-right: 86px;
+                .decsr-bottom{
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #FFFFFF;
+                    margin-bottom: 27px;
+                }
+                .descr-title-bottom{
+                    font-family: 'Jura';
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+.interesting-knives{
+    padding-bottom: 60px;
+    .knives-news-title{
+        font-family: 'Jura';
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 41px;
+        color: #FFFFFF;
+        margin-bottom: 37px;
+    }
+    .cart-news-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 28px;
+        .cart-news{
+            max-width: 380px;
+            width: 100%;
+            position: relative;
+            background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+            opacity: 0.6;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+            .cart-img{
+                width: 100%;
+            }
+            .date{
+                position: absolute;
+                top: 23px;
+                right: 25px;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+            .cart-news-descr{
+                position: absolute;
+                left: 35px;
+                bottom: 22px;
+                font-family: 'Montserrat';
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 24px;
+                color: #FFFFFF;
+                opacity: 1;
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
     }
 }

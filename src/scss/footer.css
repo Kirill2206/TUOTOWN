@@ -1,0 +1,52 @@
+.footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 70px;
+}
+
+.footer .footer-container .footer-site-descr .footer-logo-descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer .footer-container .footer-site-descr .footer-logo-descr .footer-logo {
+  font-family: 'Montserrat';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  margin-right: 26px;
+}
+
+.footer .footer-container .footer-site-descr .footer-logo-descr .footer-logo .white {
+  color: #000;
+  background-color: #fff;
+}
+
+.footer .footer-container .footer-site-descr .footer-logo-descr .footer-title {
+  max-width: 160px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.footer .footer-container .footer-site-descr .footer-descr {
+  max-width: 368px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=footer.css.map */

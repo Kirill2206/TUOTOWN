@@ -3,6 +3,7 @@ import { openBurger, closeBurger } from './js/buregerMenu';
 import './scss/main.scss';
 import './scss/header.scss';
 import './scss/burger-menu.scss';
+import './scss/footer.scss';
 
 
 document.querySelector('.burger').addEventListener('click', openBurger);
